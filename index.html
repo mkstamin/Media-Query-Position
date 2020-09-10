@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mks Tamin">
+    <title>Media-Query && Position</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Possition Static:- It will show in extra Large devices -->
+    <div class="position-static">
+        <h1>Possition Static</h1>
+        <p>বাই ডিফল্ট position:static; থাকে, এটার অর্থ হচ্ছে কোন পজিশনিং করা নেই। ডকুমেন্টের কোডের কারনে এলিমেন্টটি
+            যেখানে আঝে পেজেও সেখানে দেখাবে।</p>
+    </div>
+    <div class="st-examp">
+        <h2>Possition Static Example</h2>
+    </div>
+
+
+
+    <!-- Possition Relative:- It will show in Large devices (desktops, 992px and up) -->
+    <div class="position-relative">
+        <h1>Possition Relative</h1>
+        <p>এটাও static এর মতই কিন্তু এখানে top, left, bottom, right এবং z-index ব্যবহার করে এলিমেন্ট কে তার অবস্থান থেকে
+            সরানো যাবে। relative পজিশন করলে এলিমেন্ট তার স্বীয় অবস্থান সাপেক্ষে থাকে।
+            <br><br>
+            <span style="background-color: sandybrown;">
+                ** লক্ষনীয় বিষয় হচ্ছে বামে যাবার কারনে যে ফাকাটুকু সৃষ্টি হল সেখানে আর কাউকে ঢুকতে দেয়নি। মানে
+                ডিভটি তার আসল স্পেসটুকু হারাবেনা বরং ধরে রাখবে।
+            </span>
+        </p>
+    </div>
+    <div class="r-examp">
+        <h2>Possition Relative Example.From left: 10%;</h2>
+    </div>
+
+
+
+    <!-- Possition Absolute:- It will show in Medium devices (tablets, 768px and up) -->
+    <div class="position-absolute">
+        <h1>Possition Absolute</h1>
+        <p>position:absolute; দিলে এলিমেন্টটি তার immediate আগের প্যারেন্ট ডিভের সাপেক্ষে সরবে।
+            যদি কোন প্যারেন্ট ডিভ না থাকে তাহলে html ওয়েব পেজ এর viewport এর উপর হিসেব করে সরবে।এক্ষেত্রে left,
+            right, top এবং bottom প্রপার্টি গুলো ব্যবহার করে ঐ এলিমেন্টের অবস্থান নির্ধারণ করতে হয়।
+            <br><br>
+            <span style="background-color: sandybrown;">
+                ** লক্ষনীয় বিষয় হচ্ছে বামে নিচে যাবার কারনে যে ফাকাটুকু সৃষ্টি হল সেখানে আর কাউকে ঢুকতে দেয়নি। মানে
+                ডিভটি তার আসল স্পেসটুকু হারাবেনা বরং ধরে রাখবে।
+            </span>
+        </p>
+    </div>
+    <div class="ab-examp">প্যারেন্ট ডিভ
+        <div class="absolute">Absolute position.top: 80px;
+            right: 0;</div>
+    </div>
+
+
+
+    <!-- Possition Fixed:- It will show in Small devices (landscape phones, 576px and up) -->
+    <div class="position-fixed">
+        <h1>Possition Fixed</h1>
+        <p>fixed হল এমন একটি মান, যার জন্য কোন এইচটিএমএল এলিমেন্ট ওয়েব পেজ এর viewport এর সাথে relative ভাবে অবস্থান করে
+            অর্থাৎ এইচটিএমএল এলিমেন্টটি স্ক্রীন এ স্থির কোন অবস্থানে থাকে। এক্ষেত্রে যদি ওয়েব পেজটি ওপর-নিচ বা scroll
+            করলেও এইচটিএমএল এলিমেন্টটি স্থির থাকে। এক্ষেত্রে left, right, top এবং bottom প্রোপার্টি ব্যবহার করে কোন
+            এইচটিএমএল এলিমেন্টকে অবস্থান নির্ধারণ করা যায়।</p>
+    </div>
+    <div class="fd-examp">
+        <h2>Possition Fixed</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore odio earum necessitatibus libero, quam
+            pariatur ipsum natus laborum accusantium iusto, dicta doloribus fugiat, atque molestias nostrum officiis ab
+            magni?</p>
+    </div>
+
+
+    <!-- Possition Sticky:- It will show in Extra small devices (portrait phones, less than 576px) -->
+
+    <div class="position-sticky">
+        <h1>Possition Sticky</h1>
+        <p>sticky অবস্থান হল ব্যবহারকারীর মাউস scroll এর ওপর নির্ভরশীল একটি অবস্থান। একটি এইচটিএমএল এর sticky অবস্থান হল
+            relative এবং fixed অবস্থান এর সম্মিলিত রূপ, যা ব্যবহারকারীর মাউস scroll এর ওপর নির্ভর করে।
+            <br><br>
+            <span style="background-color: sandybrown;">
+                ** sticky অবস্থান বা position টি কাজ করার জন্য অবশ্যই right, right, top এবং bottom, এদের যে কোন একটি
+                প্রোপার্টি উল্লেখ করতে হয়।
+            </span>
+        </p>
+    </div>
+
+    <div class="sk-examp">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+
+        <h2>Possition Sticky</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque architecto quasi illo animi
+            molestiae consequatur itaque modi recusandae earum at harum aspernatur sed deleniti amet, et eos laborum
+            accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore odio earum necessitatibus libero, quam
+            pariatur ipsum natus laborum accusantium iusto, dicta doloribus fugiat, atque molestias nostrum officiis ab
+            magni?</p>
+    </div>
+
+
+    <footer>
+        <p>Copyright 2020 by Refsnes Data. All Rights Reserved.
+            Powered by Mks Tamin</p>
+    </footer>
+
+</body>
+
+</html>
